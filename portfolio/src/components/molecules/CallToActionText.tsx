@@ -1,15 +1,16 @@
 'use client';
 
 import { Button } from "@/components/atoms/Button";
+import { HomeData } from "@/types/home";
 
-export default function CallToActionText() {
+export default function CallToActionText(data: Readonly<HomeData>) {
   return (
-    <div className="text-center space-y-4">
-      <h1 className="text-3xl font-bold text-white">Bem-vindo ao meu portfólio!</h1>
-      <p className="text-lg text-white/80">Explore meus projetos e conheça mais sobre meu trabalho.</p>
+    <div className="text-center space-y-4 max-w-[66%]">
+      <h1 className="text-6xl font-bold text-white">{data.hero}</h1>
+      <p className="text-2xl text-white/80">{data.description}</p>
       <div className="flex justify-center gap-4">
-        <Button variant="default">Ver Projetos</Button>
-        <Button variant="outline" className="text-white border-white">Visualizar Currículo</Button>
+        <Button variant="default">{data.button1}</Button>
+        <Button variant="outline" className="text-white border-white">{data.button2}</Button>
       </div>
     </div>
   );
