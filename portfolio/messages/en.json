@@ -1,0 +1,8 @@
+{
+  "HomePage": {
+    "hero": "Hi! I'm Yuji Nishioka, a Full Stack software developer specialized in Next.js for Web and Mobile experiences.",
+    "description": "Explore my projects and learn more about my work.",
+    "button1": "View projects",
+    "button2": "View resume"
+  }
+}
