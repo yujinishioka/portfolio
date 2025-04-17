@@ -1,8 +1,62 @@
 {
   "HomePage": {
-    "hero": "Hi! I'm Yuji Nishioka, a Full Stack software developer specialized in Next.js for Web and Mobile experiences.",
+    "hero": "Hi! I'm Vinicius Yuji Nishioka, a Full Stack software developer specialized in Next.js for Web and Mobile experiences.",
     "description": "Explore my projects and learn more about my work.",
     "button1": "View projects",
     "button2": "View resume"
+  },
+  "Projects": {
+    "title": "Projects",
+    "description": "Aqui estão alguns dos projetos em que tive participação ativamente e alguns utilizados para estudos. Clique em cada um para saber mais.",
+    "projects_group": [
+      {
+        "id": 1,
+        "title": "Farol Santander",
+        "intro": "O Santander é um dos maiores bancos do Brasil e o Farol Santander é um espaço cultural que abriga exposições, eventos e atividades artísticas. Onde tive a oportunidade de trabalhar em um projeto de grande escala, contribuindo para a criação de componentes, ajustes e gerenciamento de CMS para o site.",
+        "description": "<p>teste</p>",
+        "url": "https://www.farolsantander.com.br",
+        "tags": [
+          "Front End",
+          "UX/UI"
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP"
+        ]
+      },
+      {
+        "id": 2,
+        "title": "Vitacon",
+        "intro": "A Vitacon é uma empresa imobiliária onde trabalhei no desenvolvimento dos componentes do site e na manutenção de ajustes e  materiais do CMS. Também participei da criação do site de gerenciamento de documentos para seus funcionários.",
+        "description": "<p>teste</p>",
+        "url": "https://vitacon.com.br",
+        "tags": [
+          "Front End",
+          "UX/UI"
+        ],
+        "technologies": [
+          "WordPress",
+          "PHP"
+        ]
+      }
+    ],
+    "projects_solo": [
+      {
+        "id": 1,
+        "title": "RPG Manager",
+        "intro": "Projeto próprio que escolhi para estudar e praticar o Next.js e TypeScript. O RPG Manager é um aplicativo de gerenciamento de campanhas de RPG.",
+        "description": "<p>teste</p>",
+        "url": "https://rpg-manager-chi.vercel.app",
+        "tags": [
+          "Front End",
+          "Back End",
+          "UX/UI"
+        ],
+        "technologies": [
+          "Next.js",
+          "Node.js"
+        ]
+      }
+    ]
   }
 }
