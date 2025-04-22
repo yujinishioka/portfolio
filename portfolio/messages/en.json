@@ -12,7 +12,7 @@
       {
         "id": 1,
         "title": "Farol Santander",
-        "intro": "O Santander é um dos maiores bancos do Brasil e o Farol Santander é um espaço cultural que abriga exposições, eventos e atividades artísticas. Onde tive a oportunidade de trabalhar em um projeto de grande escala, contribuindo para a criação de componentes, ajustes e gerenciamento de CMS para o site.",
+        "header": "O Santander é um dos maiores bancos do Brasil e o Farol Santander é um espaço cultural que abriga exposições, eventos e atividades artísticas. Onde tive a oportunidade de trabalhar em um projeto de grande escala, contribuindo para a criação de componentes, ajustes e gerenciamento de CMS para o site.",
         "description": "<p>teste</p>",
         "url": "https://www.farolsantander.com.br",
         "tags": [
@@ -22,12 +22,22 @@
         "technologies": [
           "WordPress",
           "PHP"
+        ],
+        "images": [
+          {
+            "src": "/img/projects/farol-santander/1.png",
+            "alt": "Farol Santander"
+          },
+          {
+            "src": "/img/projects/farol-santander/2.png",
+            "alt": "Farol Santander"
+          }
         ]
       },
       {
         "id": 2,
         "title": "Vitacon",
-        "intro": "A Vitacon é uma empresa imobiliária onde trabalhei no desenvolvimento dos componentes do site e na manutenção de ajustes e  materiais do CMS. Também participei da criação do site de gerenciamento de documentos para seus funcionários.",
+        "header": "A Vitacon é uma empresa imobiliária onde trabalhei no desenvolvimento dos componentes do site e na manutenção de ajustes e  materiais do CMS. Também participei da criação do site de gerenciamento de documentos para seus funcionários.",
         "description": "<p>teste</p>",
         "url": "https://vitacon.com.br",
         "tags": [
@@ -37,6 +47,12 @@
         "technologies": [
           "WordPress",
           "PHP"
+        ],
+        "images": [
+          {
+            "src": "/img/projects/vitacon/1.png",
+            "alt": "Vitacon"
+          }
         ]
       }
     ],
@@ -44,7 +60,7 @@
       {
         "id": 1,
         "title": "RPG Manager",
-        "intro": "Projeto próprio que escolhi para estudar e praticar o Next.js e TypeScript. O RPG Manager é um aplicativo de gerenciamento de campanhas de RPG.",
+        "header": "Projeto próprio que escolhi para estudar e praticar o Next.js e TypeScript. O RPG Manager é um aplicativo de gerenciamento de campanhas de RPG.",
         "description": "<p>teste</p>",
         "url": "https://rpg-manager-chi.vercel.app",
         "tags": [
@@ -55,6 +71,12 @@
         "technologies": [
           "Next.js",
           "Node.js"
+        ],
+        "images": [
+          {
+            "src": "/img/projects/rpg-manager/1.png",
+            "alt": "RPG Manager"
+          }
         ]
       }
     ]
