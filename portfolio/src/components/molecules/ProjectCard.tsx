@@ -1,6 +1,8 @@
 'use client';
 
 import Image from 'next/image';
+import useEmblaCarousel from 'embla-carousel-react';
+import Html from '@/components/atoms/Html'
 import {
   Dialog,
   DialogContent,
@@ -30,6 +32,7 @@ export default function ProjectCard({
     alt: string;
   }[];
 }>) {
+  const [emblaRef] = useEmblaCarousel({ loop: true });
   return (
     <Dialog>
       <DialogTrigger asChild>
@@ -44,16 +47,16 @@ export default function ProjectCard({
             />
           )}
           <h3 className='text-2xl lg:text-4xl'>{title}</h3>
-          <p className='pt-2 pb-8 text-center max-w-[80%] lg:text-lg'>{header}</p>
+          <p className='pt-2 pb-8 text-center max-w-[85%] lg:text-lg'>{header}</p>
         </div>
       </DialogTrigger>
-      <DialogContent className="max-w-xl">
-        <DialogHeader>
+      <DialogContent className="max-w-2xl overflow-hidden">
+        <DialogHeader className=''>
           <DialogTitle className='text-2xl'>{title}</DialogTitle>
-          <DialogDescription>{header}</DialogDescription>
+          <DialogDescription className="text-sm text-muted-foreground">{header}</DialogDescription>
+          <Html text={description} className="text-sm text-muted-foreground" />
         </DialogHeader>
-        <div className="mt-4 space-y-4">
-          <p className="text-sm text-muted-foreground">{description}</p>
+        <div className="space-y-4">
           {url && (
             <a
               href={url}
@@ -84,6 +87,29 @@ export default function ProjectCard({
               ))}
             </div>
           </div>
+          {images && images.length > 1 && (
+            <div className="py-2 border border-gray-400 rounded">
+              <div className="embla overflow-hidden px-4">
+                <div className="embla__viewport" ref={emblaRef}>
+                  <div className="embla__container flex gap-4">
+                    {images.map((img, index) => (
+                      <div
+                        className="embla__slide shrink-0 w-[85%] relative h-64"
+                        key={'image-' + index}
+                      >
+                        <Image
+                          src={img.src}
+                          alt={img.alt}
+                          fill
+                          className="object-cover rounded-md"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              </div>          
+            </div>
+          )}
         </div>
       </DialogContent>
     </Dialog>
