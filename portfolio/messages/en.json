@@ -5,6 +5,12 @@
     "button1": "View projects",
     "button2": "View resume"
   },
+  "NavBar": {
+    "projects": "projects",
+    "experience": "experience",
+    "about": "about",
+    "contact": "contact"
+  },
   "Projects": {
     "title": "Projects",
     "description": "Aqui estão alguns dos projetos em que tive participação ativamente e alguns utilizados para estudos. Clique neles para saber mais.",
