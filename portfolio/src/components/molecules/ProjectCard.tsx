@@ -40,18 +40,20 @@ export default function ProjectCard({
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className='h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition md:rounded-lg md:rounded-tr-[8rem]'>
+        <div className="group h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]">
           {images?.[0] && (
-            <Image
-              src={images[0].src}
-              alt={images[0].alt}
-              width={1000}
-              height={500}
-              className='w-full h-80 object-cover mb-4 md:rounded-tl-md md:rounded-tr-[8rem]'
-            />
+            <div className='w-full h-80 overflow-hidden md:rounded-tl-md md:rounded-tr-[8rem]'>
+              <Image
+                src={images[0].src}
+                alt={images[0].alt}
+                width={1000}
+                height={500}
+                className="w-full h-full object-cover mb-4 transition-transform duration-300 group-hover:scale-110"
+              />
+            </div>
           )}
-          <h3 className='text-2xl lg:text-4xl'>{title}</h3>
-          <p className='pt-2 pb-8 text-center max-w-[85%] lg:text-lg'>{header}</p>
+          <h3 className="pt-6 text-2xl lg:text-4xl">{title}</h3>
+          <p className="pt-2 pb-8 text-center max-w-[85%] lg:text-lg">{header}</p>
         </div>
       </DialogTrigger>
       <DialogContent className="w-full !max-w-4xl bg-radial-[at_40%_40%] from-green-800 to-black text-white border-gray-600 overflow-hidden">
