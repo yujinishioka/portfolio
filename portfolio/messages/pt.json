@@ -9,6 +9,8 @@
     "title": "Projetos",
     "description": "Aqui estão alguns dos projetos em que tive participação ativamente. Clique neles para saber mais.",
     "half": "Os projetos a seguir foram desenvolvidos por conta própria e são utilizados para estudos e prática de novas tecnologias.",
+    "urlText": "Visitar site",
+    "technologiesText": "Tecnologias",
     "projects_group": [
       {
         "id": 1,
@@ -53,6 +55,10 @@
           {
             "src": "/img/projects/vitacon/1.png",
             "alt": "Vitacon"
+          },
+          {
+            "src": "/img/projects/vitacon/1.png",
+            "alt": "Vitacon"
           }
         ]
       }
@@ -74,6 +80,10 @@
           "Node.js"
         ],
         "images": [
+          {
+            "src": "/img/projects/rpg-manager/1.png",
+            "alt": "RPG Manager"
+          },
           {
             "src": "/img/projects/rpg-manager/1.png",
             "alt": "RPG Manager"
