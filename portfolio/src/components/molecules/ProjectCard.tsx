@@ -1,8 +1,9 @@
 'use client';
 
+import { motion } from 'framer-motion';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
-import Html from '@/components/atoms/Html'
+import Html from '@/components/atoms/Html';
 import {
   Dialog,
   DialogContent,
@@ -37,12 +38,19 @@ export default function ProjectCard({
   technologiesText?: string;
 }>) {
   const [emblaRef] = useEmblaCarousel({ loop: true });
+
   return (
     <Dialog>
       <DialogTrigger asChild>
-        <div className="group h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true, amount: 0.8 }}
+          transition={{ duration: 0.5, ease: 'easeOut' }}
+          className="group h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]"
+        >
           {images?.[0] && (
-            <div className='w-full h-80 overflow-hidden md:rounded-tl-md md:rounded-tr-[8rem]'>
+            <div className="w-full h-80 overflow-hidden md:rounded-tl-md md:rounded-tr-[8rem]">
               <Image
                 src={images[0].src}
                 alt={images[0].alt}
@@ -54,15 +62,17 @@ export default function ProjectCard({
           )}
           <h3 className="pt-6 text-2xl lg:text-4xl">{title}</h3>
           <p className="pt-2 pb-8 text-center max-w-[85%] lg:text-lg">{header}</p>
-        </div>
+        </motion.div>
       </DialogTrigger>
+
       <DialogContent className="w-full !max-w-4xl bg-radial-[at_40%_40%] from-green-800 to-black text-white border-gray-600 overflow-hidden">
         <div className="md:grid md:grid-cols-4 md:gap-4">
-          <DialogHeader className='text-start md:col-span-3'>
-            <DialogTitle className='text-2xl'>{title}</DialogTitle>
+          <DialogHeader className="text-start md:col-span-3">
+            <DialogTitle className="text-2xl">{title}</DialogTitle>
             <DialogDescription className="text-sm text-gray-400">{header}</DialogDescription>
             <Html text={description} className="text-sm text-gray-400" />
           </DialogHeader>
+
           <div className="space-y-4 md:col-span-1">
             <div className="flex flex-wrap gap-2 mt-1">
               {tags.map((tag) => (
@@ -93,6 +103,7 @@ export default function ProjectCard({
             )}
           </div>
         </div>
+
         {images && images.length > 1 && (
           <div className="py-2 bg-black border border-gray-900 rounded-2xl">
             <div className="embla overflow-hidden px-4">
@@ -103,12 +114,7 @@ export default function ProjectCard({
                       className="embla__slide shrink-0 w-[95%] relative h-[320px]"
                       key={'image-' + index}
                     >
-                      <Image
-                        src={img.src}
-                        alt={img.alt}
-                        fill
-                        className="object-cover rounded-md"
-                      />
+                      <Image src={img.src} alt={img.alt} fill className="object-cover rounded-md" />
                     </div>
                   ))}
                 </div>
