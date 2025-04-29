@@ -97,5 +97,14 @@
         ]
       }
     ]
+  },
+  "Experience": {
+    "title": "Experience"
+  },
+  "About": {
+    "title": "About"
+  },
+  "Contact": {
+    "title": "Contact"
   }
 }
