@@ -1,8 +1,8 @@
 'use client';
 
-import { motion } from 'framer-motion';
 import Image from 'next/image';
 import useEmblaCarousel from 'embla-carousel-react';
+import { motion } from 'framer-motion';
 import Html from '@/components/atoms/Html';
 import {
   Dialog,
@@ -38,14 +38,13 @@ export default function ProjectCard({
   technologiesText?: string;
 }>) {
   const [emblaRef] = useEmblaCarousel({ loop: true });
-
   return (
     <Dialog>
       <DialogTrigger asChild>
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, amount: 0.8 }}
+          viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
           className="group h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]"
         >
@@ -64,7 +63,6 @@ export default function ProjectCard({
           <p className="pt-2 pb-8 text-center max-w-[85%] lg:text-lg">{header}</p>
         </motion.div>
       </DialogTrigger>
-
       <DialogContent className="w-full !max-w-4xl bg-radial-[at_40%_40%] from-green-800 to-black text-white border-gray-600 overflow-hidden">
         <div className="md:grid md:grid-cols-4 md:gap-4">
           <DialogHeader className="text-start md:col-span-3">
@@ -72,7 +70,6 @@ export default function ProjectCard({
             <DialogDescription className="text-sm text-gray-400">{header}</DialogDescription>
             <Html text={description} className="text-sm text-gray-400" />
           </DialogHeader>
-
           <div className="space-y-4 md:col-span-1">
             <div className="flex flex-wrap gap-2 mt-1">
               {tags.map((tag) => (
@@ -103,7 +100,6 @@ export default function ProjectCard({
             )}
           </div>
         </div>
-
         {images && images.length > 1 && (
           <div className="py-2 bg-black border border-gray-900 rounded-2xl">
             <div className="embla overflow-hidden px-4">
