@@ -46,7 +46,7 @@ export default function ProjectCard({
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-100px" }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
-          className="group h-full flex flex-col items-center border border-gray-800 shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]"
+          className="group h-full flex flex-col items-center border border-gray-dark shadow cursor-pointer transition overflow-hidden md:rounded-lg md:rounded-tr-[8rem]"
         >
           {images?.[0] && (
             <div className="w-full h-80 overflow-hidden md:rounded-tl-md md:rounded-tr-[8rem]">
@@ -63,17 +63,17 @@ export default function ProjectCard({
           <p className="pt-2 pb-8 text-center max-w-[85%] lg:text-lg">{header}</p>
         </motion.div>
       </DialogTrigger>
-      <DialogContent className="w-full !max-w-4xl bg-radial-[at_40%_40%] from-green-800 to-black text-white border-gray-600 overflow-hidden">
+      <DialogContent className="w-full !max-w-4xl bg-radial-[at_40%_40%] from-primary-dark to-black text-white border-gray-dark overflow-hidden">
         <div className="md:grid md:grid-cols-4 md:gap-4">
           <DialogHeader className="text-start md:col-span-3">
             <DialogTitle className="text-2xl">{title}</DialogTitle>
-            <DialogDescription className="text-sm text-gray-400">{header}</DialogDescription>
-            <Html text={description} className="text-sm text-gray-400" />
+            <DialogDescription className="text-sm text-gray-light">{header}</DialogDescription>
+            <Html text={description} className="text-sm text-gray-light" />
           </DialogHeader>
           <div className="space-y-4 md:col-span-1">
             <div className="flex flex-wrap gap-2 mt-1">
               {tags.map((tag) => (
-                <span key={tag} className="px-3 py-1 text-xs bg-gray-900 border border-gray-500 rounded-xl">
+                <span key={tag} className="px-3 py-1 text-xs bg-black/90 border border-gray-dark rounded-xl">
                   {tag}
                 </span>
               ))}
@@ -82,7 +82,7 @@ export default function ProjectCard({
               <strong>{technologiesText}:</strong>
               <div className="flex flex-wrap gap-2 mt-1">
                 {technologies.map((tech) => (
-                  <span key={tech} className="px-2 py-1 text-xs bg-gray-600 rounded">
+                  <span key={tech} className="px-2 py-1 text-xs bg-gray rounded">
                     {tech}
                   </span>
                 ))}
@@ -93,7 +93,7 @@ export default function ProjectCard({
                 href={url}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex w-full px-2 py-1 text-sm text-green-600 font-bold items-center justify-center border-2 border-green-600 rounded hover:text-black hover:bg-green-600 transition duration-300 ease-in-out"
+                className="flex w-full px-2 py-1 text-sm text-primary font-bold items-center justify-center border-2 border-primary rounded hover:text-black hover:bg-primary transition duration-300 ease-in-out"
               >
                 {urlText}
               </a>
@@ -101,7 +101,7 @@ export default function ProjectCard({
           </div>
         </div>
         {images && images.length > 1 && (
-          <div className="py-2 bg-black border border-gray-900 rounded-2xl">
+          <div className="py-2 bg-black border border-black/80 rounded-2xl">
             <div className="embla overflow-hidden px-4">
               <div className="embla__viewport" ref={emblaRef}>
                 <div className="embla__container flex gap-2">

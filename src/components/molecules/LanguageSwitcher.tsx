@@ -16,7 +16,7 @@ export default function LanguageSwitcher() {
           key={lang}
           href={pathname}
           locale={lang}
-          className="p-3 text-white hover:text-green-300 transition-colors duration-200 ease-in-out"
+          className="p-3 text-white hover:text-primary-light transition-colors duration-200 ease-in-out"
         >
           {lang.toUpperCase()}
         </Link>

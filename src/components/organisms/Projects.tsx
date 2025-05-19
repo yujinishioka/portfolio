@@ -33,7 +33,7 @@ export default function Projects({ className }: Readonly<{ className?: string }>
 
   return (
     <section className={twMerge('bg-black/80 text-white min-h-screen py-48 flex flex-col items-center', className)}>
-      <h2 id='projects' className='text-green-300 text-4xl scroll-mt-24 md:text-6xl lg:text-8xl'>{t('title')}</h2>
+      <h2 id='projects' className='text-primary-light text-4xl scroll-mt-24 md:text-6xl lg:text-8xl'>{t('title')}</h2>
       <p className='pt-6 pb-12 text-center max-w-[80%] md:pb-24 lg:text-lg lg:max-w-[40%]'>{t('description')}</p>
       <div className='grid items-center justify-between gap-24 md:gap-12 md:max-w-[80%] lg:grid-cols-2 xl:grid-cols-3'>
         {

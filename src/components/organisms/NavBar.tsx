@@ -6,7 +6,7 @@ import LanguageSwitcher from "@/components/molecules/LanguageSwitcher";
 
 export default function NavBar({ className }: Readonly<{ className?: string }>) {
   const t = useTranslations('NavBar');
-  const buttonClass = "p-3 cursor-pointer transition-colors duration-200 ease-in-out hover:text-green-300";
+  const buttonClass = "p-3 cursor-pointer transition-colors duration-200 ease-in-out hover:text-primary-light";
   const scrollTo = (id: string) => {
     const el = document.getElementById(id);
     if (el) {
@@ -15,7 +15,7 @@ export default function NavBar({ className }: Readonly<{ className?: string }>) 
   };
 
   return (
-    <div className={twMerge("fixed z-50 top-4 left-1/2 -translate-x-1/2 px-2 bg-black/80 text-white shadow-md border-2 border-green-200 rounded-4xl", className)}>
+    <div className={twMerge("fixed z-50 top-4 left-1/2 -translate-x-1/2 px-2 bg-black/80 text-white shadow-md border-2 border-primary-light rounded-4xl", className)}>
       <nav className="flex items-center justify-center">
         <button className={buttonClass} onClick={() => scrollTo("projects")}>{t('projects')}</button>
         <button className={buttonClass} onClick={() => scrollTo("experience")}>{t('experience')}</button>

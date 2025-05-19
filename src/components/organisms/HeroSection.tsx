@@ -11,7 +11,7 @@ type HeroSectionProps = CallToActionTextProps & {
 export default function HeroSection({ className, ...props }: Readonly<HeroSectionProps>) {
   return (
     <section className={twMerge(
-      "min-h-screen bg-radial-[at_25%_25%] from-black to-green-900 to-75% flex items-center justify-center px-4 lg:rounded-b-[80px]",
+      "min-h-screen bg-radial-[at_25%_25%] from-black to-primary-dark to-75% flex items-center justify-center px-4 lg:rounded-b-[80px]",
       className
     )}>
       <CallToActionText data={props} fallbackUrl="#projects" />
