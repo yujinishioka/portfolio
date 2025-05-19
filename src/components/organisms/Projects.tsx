@@ -53,7 +53,7 @@ export default function Projects({ className }: Readonly<{ className?: string }>
           ))
         }
       </div>
-      <p className='py-12 text-center max-w-[80%] md:py-24 lg:text-lg lg:max-w-[40%]'>{t('half')}</p>
+      <p className='py-24 text-center text-primary-light max-w-[80%] md:py-24 lg:text-lg lg:max-w-[40%]'>{t('half')}</p>
       <div className='grid items-center justify-between gap-24 md:gap-12 md:max-w-[80%] lg:grid-cols-2 xl:grid-cols-3'>
         {
           projectsSolo.map((project) => (
