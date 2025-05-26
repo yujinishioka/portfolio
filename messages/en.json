@@ -13,8 +13,8 @@
   },
   "Projects": {
     "title": "Projects",
-    "description": "Aqui estão alguns dos projetos em que tive participação ativamente e alguns utilizados para estudos. Clique neles para saber mais.",
-    "half": "Os projetos a seguir foram desenvolvidos por conta própria e são utilizados para estudos e prática de novas tecnologias.",
+    "description": "Here are some of the projects I actively participated in, as well as a few used for study purposes. Click on them to learn more.",
+    "half": "The following projects were developed independently and are used for studying and practicing new technologies.",
     "urlText": "Visit site",
     "technologiesText": "Technologies",
     "projects_group": [
@@ -61,7 +61,7 @@
       {
         "id": 1,
         "title": "RPG Manager",
-        "header": "Projeto próprio que escolhi para estudar e praticar o Next.js e TypeScript. O RPG Manager é um aplicativo de gerenciamento de campanhas de RPG.",
+        "header": "A personal project I chose to study and practice Next.js and TypeScript. RPG Manager is an application for managing RPG campaigns.",
         "description": "<p>teste</p>",
         "url": "https://rpg-manager-chi.vercel.app",
         "tags": ["Front End", "Back End", "UX/UI"],
@@ -94,9 +94,25 @@
     ]
   },
   "About": {
-    "title": "About"
+    "title": "About",
+    "description": "<p>I am a Full Stack software developer focused on Next.js, specializing in creating web and mobile experiences. I began my studies in Computer Engineering at a federal university in Rio Grande do Sul, Brazil (UNIPAMPA), with an emphasis on languages such as Java and C#, along with more technical concepts.</p><p>With the arrival of the Covid-19 pandemic and the suspension of classes, I decided to return to São Paulo and start a degree in Systems Analysis and Development at FIAP. During the course, I had the opportunity to join Sioux, where I worked as a developer for three full years in my first job in the field.</p>"
   },
   "Contact": {
-    "title": "Contact"
+    "title": "Contact",
+    "description": "Feel free to reach out and connect with me on my social media. Whether it's to discuss projects, collaborate on ideas, or just have a chat about technology, design, and the latest trends.",
+    "urls": [
+      {
+        "name": "E-mail",
+        "url": "mailto:yuu.nishioka@outlook.com"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yuji-nishioka/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/yujinishioka"
+      }
+    ]
   }
 }

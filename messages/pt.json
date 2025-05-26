@@ -94,9 +94,25 @@
     ]
   },
   "About": {
-    "title": "Sobre"
+    "title": "Sobre",
+    "description": "<p>Sou um desenvolvedor de software Full Stack com foco em Next.js, especializado na criação de experiências web e mobile. Iniciei meus estudos em Engenharia da Computação em uma universidade federal no Rio Grande do Sul (UNIPAMPA), com ênfase em linguagens como Java e C#, além de conceitos técnicos mais aprofundados.</p><p>Com a chegada da pandemia da Covid-19 e a paralisação das aulas, decidi retornar a São Paulo e iniciar o curso de Análise e Desenvolvimento de Sistemas na FIAP. Durante o curso, tive a oportunidade de ingressar na Sioux, onde atuei como desenvolvedor por 3 anos, no meu primeiro emprego na área.</p>"
   },
   "Contact": {
-    "title": "Contato"
+    "title": "Contato",
+    "description": "Sinta-se livre para entrar em contato comigo e trocar mensagens nas minhas redes sociais. Seja para discutir projetos, colaborações em ideias, ou apenas para um bate-papo sobre tecnologia, design e novidades.",
+    "urls": [
+      {
+        "name": "E-mail",
+        "url": "mailto:yuu.nishioka@outlook.com"
+      },
+      {
+        "name": "LinkedIn",
+        "url": "https://www.linkedin.com/in/yuji-nishioka/"
+      },
+      {
+        "name": "GitHub",
+        "url": "https://github.com/yujinishioka"
+      }
+    ]
   }
 }
