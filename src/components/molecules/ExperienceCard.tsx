@@ -2,6 +2,7 @@
 
 import { useRef } from "react";
 import Link from "next/link";
+import { useTranslations } from 'next-intl';
 import { motion, useInView } from "framer-motion";
 import Html from "@/components/atoms/Html";
 
@@ -24,6 +25,7 @@ export default function ExperienceCard({
 }>) {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
+  const t = useTranslations('Experience');
 
   return (
     <motion.div
@@ -47,7 +49,7 @@ export default function ExperienceCard({
           target="_blank"
           className="px-8 rounded-lg bg-primary"
         >
-          Visite o site da empresa
+          {t('visitCompany')}
         </Link>
         <Html
           text={summary}

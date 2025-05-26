@@ -20,7 +20,7 @@ export default function Contact() {
       >
         {t("title")}
       </h2>
-      <p className="mt-6 p-6 md:max-w-[900px] md:mt-6 md:text-lg md:text-center">{t("description")}</p>
+      <p className="mt-6 p-6 text-center md:max-w-[900px] md:mt-6 md:text-lg">{t("description")}</p>
       <div className="flex mt-6 gap-4 md:gap-8">
         {Array.isArray(urls) &&
           urls.map((item: { name: string; url: string }, index: number) => {

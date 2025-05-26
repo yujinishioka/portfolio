@@ -21,38 +21,69 @@
       {
         "id": 1,
         "title": "Farol Santander",
-        "header": "O Santander é um dos maiores bancos do Brasil e o Farol Santander é um espaço cultural que abriga exposições, eventos e atividades artísticas. Onde tive a oportunidade de trabalhar em um projeto de grande escala, contribuindo para a criação de componentes, ajustes e gerenciamento de CMS para o site.",
-        "description": "<p>teste</p>",
-        "url": "https://www.farolsantander.com.br",
+        "header": "Santander is one of the largest banks in Brazil, and Farol Santander is a cultural space that hosts exhibitions, events, and artistic activities. I had the opportunity to work on a large-scale project, contributing to the creation of components, adjustments, and CMS management for the website.",
+        "description": "<p>The frontend was built with Next.js and its data was managed through a WordPress CMS. I was responsible for managing the site’s information, translations, and layout changes.</p>",
+        "url": "https://www.farolsantander.com.br/en/sp",
         "tags": ["Front End", "UX/UI"],
-        "technologies": ["WordPress", "PHP"],
+        "technologies": ["Next.js", "WordPress"],
         "images": [
           {
             "src": "/img/projects/farol-santander/1.png",
-            "alt": "Farol Santander"
+            "alt": "Farol Santander Homepage"
           },
           {
             "src": "/img/projects/farol-santander/2.png",
-            "alt": "Farol Santander"
+            "alt": "Farol Santander Exhibitions"
+          },
+          {
+            "src": "/img/projects/farol-santander/3.png",
+            "alt": "Farol Santander Exhibition"
           }
         ]
       },
       {
         "id": 2,
         "title": "Vitacon",
-        "header": "A Vitacon é uma empresa imobiliária onde trabalhei no desenvolvimento dos componentes do site e na manutenção de ajustes e  materiais do CMS. Também participei da criação do site de gerenciamento de documentos para seus funcionários.",
-        "description": "<p>teste</p>",
-        "url": "https://vitacon.com.br",
+        "header": "Vitacon is a real estate company where I worked on developing website components and maintaining adjustments and CMS content. I also contributed to building the document management website for their employees.",
+        "description": "<p>After the initial development, I was responsible for handling new requests, including layout changes, content updates, and performance improvements with a focus on SEO.</p>",
+        "url": "https://vitacon.com.br/en",
         "tags": ["Front End", "UX/UI"],
-        "technologies": ["WordPress", "PHP"],
+        "technologies": ["Next.js", "WordPress"],
         "images": [
           {
             "src": "/img/projects/vitacon/1.png",
-            "alt": "Vitacon"
+            "alt": "Vitacon Homepage"
           },
           {
-            "src": "/img/projects/vitacon/1.png",
-            "alt": "Vitacon"
+            "src": "/img/projects/vitacon/2.png",
+            "alt": "Vitacon Portfolio"
+          },
+          {
+            "src": "/img/projects/vitacon/3.png",
+            "alt": "Vitacon Enterprise"
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "title": "Cooltour Oporto",
+        "header": "Cooltour Oporto is a tourism company based in Portugal, where I worked from the beginning of the project, building responsive and reusable components. I worked closely with the designer to ensure the layout matched the client’s expectations.",
+        "description": "<p>This project was designed to support multiple languages. I implemented a system capable of handling new languages as the website expanded.</p>",
+        "url": "https://cooltouroporto.com",
+        "tags": ["Front End", "UX/UI"],
+        "technologies": ["Next.js"],
+        "images": [
+          {
+            "src": "/img/projects/cooltour-oporto/1.png",
+            "alt": "Cooltour Oporto Homepage"
+          },
+          {
+            "src": "/img/projects/cooltour-oporto/2.png",
+            "alt": "Cooltour Oporto Attraction"
+          },
+          {
+            "src": "/img/projects/cooltour-oporto/3.png",
+            "alt": "Cooltour Oporto Blog"
           }
         ]
       }
@@ -61,19 +92,23 @@
       {
         "id": 1,
         "title": "RPG Manager",
-        "header": "A personal project I chose to study and practice Next.js and TypeScript. RPG Manager is an application for managing RPG campaigns.",
-        "description": "<p>teste</p>",
+        "header": "A personal project I chose to study and practice Next.js and TypeScript. RPG Manager is an app for managing RPG campaigns.",
+        "description": "<p>The theme was chosen to cover a wide range of libraries and functionalities, as well as to improve my knowledge of SQL and NoSQL databases. I used MongoDB with JSON files for the NoSQL model and a PostgreSQL database hosted on the Neon platform.</p>",
         "url": "https://rpg-manager-chi.vercel.app",
         "tags": ["Front End", "Back End", "UX/UI"],
         "technologies": ["Next.js", "Node.js"],
         "images": [
           {
             "src": "/img/projects/rpg-manager/1.png",
-            "alt": "RPG Manager"
+            "alt": "RPG Manager Homepage"
           },
           {
-            "src": "/img/projects/rpg-manager/1.png",
-            "alt": "RPG Manager"
+            "src": "/img/projects/rpg-manager/2.png",
+            "alt": "RPG Manager Character Profile"
+          },
+          {
+            "src": "/img/projects/rpg-manager/3.png",
+            "alt": "RPG Manager Wiki"
           }
         ]
       }
@@ -81,6 +116,7 @@
   },
   "Experience": {
     "title": "Experience",
+    "visitCompany": "Visit company website",
     "items": [
       {
         "id": 1,
