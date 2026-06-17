@@ -4,6 +4,7 @@ import NavBar from '@/components/organisms/NavBar';
 import HeroSection from "@/components/organisms/HeroSection";
 import Projects from '@/components/organisms/Projects';
 import Experience from '@/components/organisms/Experience';
+import Skills from '@/components/organisms/Skills';
 import About from '@/components/organisms/About';
 import Contact from '@/components/organisms/Contact';
 
@@ -28,6 +29,7 @@ export default function HomePage() {
       }} />
       <Projects className="md:-mt-24 md:pt-72"/>
       <Experience />
+      <Skills />
       <About />
       <Contact />
     </div>

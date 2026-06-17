@@ -7,6 +7,7 @@ import LinkedInIcon from "@/components/icons/LinkedInIcon";
 
 export default function Contact() {
   const t = useTranslations("Contact");
+  const tFooter = useTranslations("Footer");
   const urls = t.raw("urls") as {
     name: string;
     url: string;
@@ -67,6 +68,7 @@ export default function Contact() {
             return null;
           })}
       </div>
+      <p className="mt-16 text-xs text-white/30">{tFooter("lastUpdated")}</p>
     </section>
   );
 }

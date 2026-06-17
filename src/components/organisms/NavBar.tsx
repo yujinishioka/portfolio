@@ -19,6 +19,7 @@ export default function NavBar({ className }: Readonly<{ className?: string }>) 
       <nav className="flex items-center justify-center">
         <button className={buttonClass} onClick={() => scrollTo("projects")}>{t('projects')}</button>
         <button className={buttonClass} onClick={() => scrollTo("experience")}>{t('experience')}</button>
+        <button className={buttonClass} onClick={() => scrollTo("skills")}>{t('skills')}</button>
         <button className={buttonClass} onClick={() => scrollTo("about")}>{t('about')}</button>
         <button className={buttonClass} onClick={() => scrollTo("contact")}>{t('contact')}</button>
         <LanguageSwitcher />

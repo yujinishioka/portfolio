@@ -8,6 +8,7 @@
   "NavBar": {
     "projects": "projetos",
     "experience": "experiência",
+    "skills": "habilidades",
     "about": "sobre",
     "contact": "contato"
   },
@@ -126,12 +127,35 @@
         "workModel": "Híbrido",
         "companyUrl": "https://sioux.ag",
         "summary": "<p>Responsável pelo desenvolvimento e manutenção de soluções web modernas, escaláveis e de alto desempenho, tanto no frontend quanto no backend.</p><p>No frontend, trabalho com foco principal em Next.js e React, além de experiência sólida com Angular e ASP.NET Core, garantindo interfaces otimizadas e responsivas. Utilizo Tailwind CSS e SASS para estilização moderna e eficiente, além de aplicar boas práticas de acessibilidade e performance (com foco em SEO).</p><p>Na camada backend, desenvolvo aplicações com Node.js e ASP.NET Core Web API, integrando com REST e GraphQL, e manipulando dados em formatos como JSON e Base64. Tenho atuação constante com bancos relacionais (PostgreSQL, SQL Server) e não-relacionais (MongoDB), além de integração com ORMs como Prisma e Sequelize.</p><p>Também trabalhei com a customização de CMS WordPress via PHP, criação de documentação técnica detalhada, e execução de testes locais e em ambientes de homologação, assegurando qualidade nas entregas. Além disso, contribuí para o versionamento e automação de entregas com Git, e participei de times ágeis com Scrum e Kanban, utilizando Jira e Trello para organização e gestão de tarefas.</p>"
+      },
+      {
+        "id": 2,
+        "date": "2025–2026",
+        "position": "Desenvolvedor Pleno",
+        "company": "Allcom Telecom",
+        "workModel": "Híbrido",
+        "companyUrl": "https://allcomtelecom.com",
+        "summary": "<p>Responsável pelo desenvolvimento e manutenção do CRM interno da empresa, implementando novas funcionalidades e melhorias contínuas de performance, como otimização de processamentos e redução no consumo de memória.</p><p>No frontend, trabalho com Next.js e React, desenvolvendo interfaces modernas e responsivas. Na camada backend, utilizo Laravel (PHP) para construir APIs robustas e escaláveis, garantindo a integridade e eficiência dos dados.</p>"
       }
     ]
   },
   "About": {
     "title": "Sobre",
-    "description": "<p>Sou um desenvolvedor de software Full Stack com foco em Next.js, especializado na criação de experiências web e mobile. Iniciei meus estudos em Engenharia da Computação em uma universidade federal no Rio Grande do Sul (UNIPAMPA), com ênfase em linguagens como Java e C#, além de conceitos técnicos mais aprofundados.</p><p>Com a chegada da pandemia da Covid-19 e a paralisação das aulas, decidi retornar a São Paulo e iniciar o curso de Análise e Desenvolvimento de Sistemas na FIAP. Durante o curso, tive a oportunidade de ingressar na Sioux, onde atuei como desenvolvedor por 3 anos, no meu primeiro emprego na área.</p>"
+    "photoAlt": "Foto de Vinicius Yuji Nishioka",
+    "description": "<p>Sou um desenvolvedor de software Full Stack com foco em Next.js e Node.js, especializado na criação de experiências web e mobile. Iniciei meus estudos em Engenharia da Computação em uma universidade federal no Rio Grande do Sul (UNIPAMPA), com ênfase em linguagens como Java e C#, além de conceitos técnicos mais aprofundados.</p><p>Com a chegada da pandemia da Covid-19 e a paralisação das aulas, decidi retornar a São Paulo e iniciar o curso de Análise e Desenvolvimento de Sistemas na FIAP. Durante o curso, tive a oportunidade de ingressar na Sioux, onde atuei como desenvolvedor por 3 anos, no meu primeiro emprego na área.</p><p>Mantenho minha trajetória em constante evolução, buscando me atualizar com as tecnologias do mercado e trabalhando de forma proativa para entender as necessidades reais de cada projeto. Estou sempre aberto a novos desafios e oportunidades nesse mercado em constante transformação.</p>"
+  },
+  "Skills": {
+    "title": "Habilidades",
+    "description": "Tecnologias e ferramentas que utilizo no dia a dia para construir soluções modernas.",
+    "categories": [
+      { "name": "Frontend", "items": ["Next.js", "React", "TypeScript", "Angular", "Tailwind CSS", "SASS"] },
+      { "name": "Backend", "items": ["Node.js", "Laravel", "ASP.NET Core"] },
+      { "name": "Banco de Dados", "items": ["PostgreSQL", "MongoDB", "SQL Server"] },
+      { "name": "Ferramentas", "items": ["Git", "Prisma", "Sequelize", "Jira", "Trello"] }
+    ]
+  },
+  "Footer": {
+    "lastUpdated": "Portfólio atualizado em Junho de 2026"
   },
   "Contact": {
     "title": "Contato",
